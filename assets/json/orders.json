@@ -1,0 +1,164 @@
+[
+    {
+        "userName": "Kiran",
+        "orderedItems": 3,
+        "status": "ordered",
+        "isRejected" : false,
+        "items": [
+            {
+                "itemName": "Chicken Pizza",
+                "itemCost": 200,
+                "size": "Medium",
+                "items": 2
+            },
+            {
+                "itemName": "Panner Pizza",
+                "itemCost": 200,
+                "size": "Medium",
+                "items": 1
+            }
+        ],
+        "userDetails": {
+            "name" : "Kiran H",
+            "address" : "Hyderabad,500083",
+            "contact" : 9999999999
+        }
+    },
+    {
+        "userName": "Swetha",
+        "orderedItems": 3,
+        "status": "ordered",
+        "isRejected" : false,
+        "items": [
+            {
+                "itemName": "Chicken Tikka Pizza",
+                "itemCost": 200,
+                "size": "Medium",
+                "items": 1
+            },
+            {
+                "itemName": "Veg Pizza",
+                "itemCost": 100,
+                "size": "Medium",
+                "items": 2
+            }
+        ],
+        "userDetails": {
+            "name" : "Swetha",
+            "address" : "Hyderabad,500083",
+            "contact" : 9999999999
+        }
+    },
+    {
+        "userName": "Shalini",
+        "orderedItems": 3,
+        "status": "in-progress",
+        "isRejected" : false,
+        "items": [
+            {
+                "itemName": "Veg Pizza",
+                "itemCost": 100,
+                "size": "Medium",
+                "items": 3
+            },
+            {
+                "itemName": "Panner Pizza",
+                "itemCost": 200,
+                "size": "Medium",
+                "items": 2
+            }
+        ],
+        "userDetails": {
+            "name" : "Swetha",
+            "address" : "Hyderabad,500083",
+            "contact" : 9999999999
+        }
+    },
+    {
+        "userName": "Shankar",
+        "orderedItems": 3,
+        "status": "delivered",
+        "isRejected" : false,
+        "items": [
+            {
+                "itemName": "Veg Pizza",
+                "itemCost": 100,
+                "size": "Medium",
+                "items": 1
+            },
+            {
+                "itemName": "Panner Pizza",
+                "itemCost": 200,
+                "size": "Medium",
+                "items": 4
+            }
+        ],
+        "userDetails": {
+            "name" : "Swetha",
+            "address" : "Hyderabad,500083",
+            "contact" : 9999999999
+        }
+    },
+    {
+        "userName": "Shalini",
+        "orderedItems": 3,
+        "status": "in-progress",
+        "isRejected" : false,
+        "items": [
+            {
+                "itemName": "Veg Pizza",
+                "itemCost": 100,
+                "size": "Medium",
+                "items": 2
+            },
+            {
+                "itemName": "Panner Pizza",
+                "itemCost": 200,
+                "size": "Medium",
+                "items": 1
+            },
+            {
+                "itemName": "Panner Pizza",
+                "itemCost": 200,
+                "size": "Medium",
+                "items": 2
+            }
+        ],
+        "userDetails": {
+            "name" : "Swetha",
+            "address" : "Hyderabad,500083",
+            "contact" : 9999999999
+        }
+    },
+    {
+        "userName": "Karthik",
+        "orderedItems": 3,
+        "status": "ordered",
+        "isRejected" : true,
+        "items": [
+            {
+                "itemName": "Veg Pizza",
+                "itemCost": 100,
+                "size": "Medium",
+                "items": 2
+            },
+            {
+                "itemName": "Panner Pizza",
+                "itemCost": 200,
+                "size": "Medium",
+                "items": 2
+            },
+            {
+                "itemName": "Chicken Pizza",
+                "itemCost": 200,
+                "size": "Small",
+                "items": 2
+            }
+        ],
+        "userDetails": {
+            "name" : "Swetha",
+            "address" : "Hyderabad,500083",
+            "contact" : 9999999999
+        }
+    }
+]

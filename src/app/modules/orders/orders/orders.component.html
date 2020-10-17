@@ -1,0 +1,30 @@
+<div class="orders-wrapper">
+  <div class="orders-title">Orders List</div>
+  <div class="orders-list">
+    <div class="orders-block" (click)="goToDetails(i)" *ngFor="let order of ordersList, let i = index">
+        <div class="row">
+      <div class="left-block col-md-10">
+        <div class="user-name">{{order.userName}}</div>
+        <div class="details-block">
+          <div>
+            <span class="label">No. Of Items<span class="seperator">:</span> </span>
+            <span class="value">{{order.items.length}}</span>
+          </div>
+          <div>
+            <span class="label">Status<span class="seperator">:</span> </span>
+            <span class="value">{{order.isRejected ? "Due to some issued restaurant rejected order" : order.displayStatus}}</span>
+          </div>
+          <div>
+            <span class="label">Total Amount<span class="seperator">:</span> </span>
+            <span class="value">{{order.totalCount}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="button-block col-md-2">
+        <button type="button" class="accept btn {{order.btnClass}} btn-primary order-buttons" (click)="changeStatus($event,i)" [disabled]="order.status === 'complete' || order.isRejected === true">{{order.buttonName}}</button>
+        <button type="button" class="reject btn btn-danger order-buttons" [disabled]="order.status ==='complete'" (click)='rejectOrder($event,i)'>{{order.isRejected ? "Unreject" : "Reject"}}</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

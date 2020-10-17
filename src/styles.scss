@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.label {
+    min-width: 140px;
+    float: left;
+    font-weight: bold;
+    display: block;
+    font-size: 12px;
+}
+.value {
+    font-size: 12px;
+}
+.seperator {
+    float: right;
+    margin: 0 10px;
+}
+.b-t{
+    border-top: 1px solid #ddd;
+}
+.accept {
+    margin-top: 10px;
+}

@@ -1,0 +1,63 @@
+<div class="order-wraper">
+    <div class="title-wrapper">
+        <h4>Order Details</h4>
+    </div>
+    <div class="order-details-wrapper">
+        <div class="user-details">
+            <div class="detil-block">
+                <span class="label">Name<span class="seperator">:</span> </span>
+                <span class="value">{{orderDetails?.userDetails.name}}</span>
+            </div>
+            <div class="detil-block">
+                <span class="label">Address<span class="seperator">:</span> </span>
+                <span class="value">{{orderDetails?.userDetails.address}}</span>
+            </div>
+            <div class="detil-block">
+                <span class="label">Contact<span class="seperator">:</span> </span>
+                <span class="value">{{orderDetails?.userDetails.contact}}</span>
+            </div>
+        </div>
+        <div class="details-block">
+            <div class="detil-block">
+              <span class="label">No. Of Items<span class="seperator">:</span><span class="seperator"></span> </span>
+              <span class="value">{{orderDetails?.items.length}}</span>
+            </div>
+            <div class="detil-block">
+              <span class="label">Status<span class="seperator">:</span> </span>
+              <span class="value">{{orderDetails?.isRejected ? "Due to some issued restaurant rejected order" : orderDetails.displayStatus}}</span>
+            </div>
+            <div>
+              <span class="label">Total Amount<span class="seperator">:</span> </span>
+              <span class="value">{{orderDetails?.totalCount}}</span>
+            </div>
+          </div>
+          
+    </div>
+    <div class="tables-wrapper">
+        <div class="title-wrapper b-t">
+            <h4>Items Ordered</h4>
+        </div>
+        <div class="table-responsive"> 
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Item Name</th>
+                <th>Size</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of orderDetails.items, let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{item.itemName}}</td>
+                <td>{{item.size}}</td>
+                <td>{{item.items}}</td>
+                <td>{{item.itemCost}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</div>
